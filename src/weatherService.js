@@ -26,7 +26,8 @@ const getFormattedWeatherData = async (city, units=`metric`) => {
     return {
         description, 
         iconURL: makeIconURL(icon), 
-        temp, 
+        temp,
+        feels_like, 
         temp_min, 
         temp_max, 
         pressure, 

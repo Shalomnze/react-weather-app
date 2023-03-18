@@ -12,6 +12,7 @@ function App() {
     const fetchWeatherData = async () => {
     const data = await getFormattedWeatherData("paris");
     setWeather(data);
+    
     };
     fetchWeatherData();
   }, [])
@@ -37,7 +38,7 @@ function App() {
                 <h3>{weather.description}</h3>
             </div>
             <div className="temperature">
-            <h1>{weather.temp_min.toFixed()} °C </h1>
+            <h1>{weather.temp.toFixed()} °C </h1>
             </div>
           </div>
 
